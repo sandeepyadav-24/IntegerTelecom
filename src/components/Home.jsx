@@ -488,55 +488,7 @@ export default function IntegerTelecom() {
         </div>
       </section>
 
-      {/* ── Footer ── */}
-      <footer className="bg-white border-t border-slate-200 pt-16 pb-8">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-10 mb-12">
-          <div className="col-span-2">
-            <div className="flex items-center gap-2 mb-5">
-              <Icon name="antenna" className="w-7 h-7 text-blue-500" />
-              <span className="text-lg font-black tracking-tight">Integer Telecom Services</span>
-            </div>
-            <p className="text-slate-500 max-w-sm mb-6 text-sm leading-relaxed">
-              Bridging the gap between engineering and field execution for the telecommunications industry across North America and Asia.
-            </p>
-            <div className="flex gap-3">
-              {["share", "mail"].map((icon) => (
-                <a
-                  key={icon}
-                  href="#"
-                  className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500 hover:text-blue-500 hover:bg-blue-50 transition-colors"
-                >
-                  <Icon name={icon} className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h5 className="font-bold mb-5 text-sm uppercase tracking-wider">Services</h5>
-            <ul className="space-y-3 text-sm text-slate-600">
-              {["Wireless Engineering", "Fiber Solutions", "Data Center Infrastructure", "Tower Services"].map((s) => (
-                <li key={s}><a href="#" className="hover:text-blue-500 transition-colors">{s}</a></li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-bold mb-5 text-sm uppercase tracking-wider">Company</h5>
-            <ul className="space-y-3 text-sm text-slate-600">
-              {["About Us", "Global Reach", "Case Studies", "Careers"].map((s) => (
-                <li key={s}><a href="#" className="hover:text-blue-500 transition-colors">{s}</a></li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400 font-medium">
-          <p>© 2024 Integer Telecom Services. All rights reserved.</p>
-          <div className="flex gap-6">
-            {["Privacy Policy", "Terms of Service", "Compliance"].map((l) => (
-              <a key={l} href="#" className="hover:text-slate-600 transition-colors">{l}</a>
-            ))}
-          </div>
-        </div>
-      </footer>
+      
     </div>
   );
 }
