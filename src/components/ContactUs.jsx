@@ -212,56 +212,7 @@ export default function ContactUs() {
           </section>
         </main>
 
-        {/* ══════════ FOOTER ══════════ */}
-        <footer className="bg-slate-900 text-slate-400 py-14 px-4">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-            {/* Brand */}
-            <div className="md:col-span-2 space-y-4">
-              <div className="flex items-center gap-2 text-white">
-                <span className="material-symbols-outlined text-2xl" style={{ color: PRIMARY }}>cell_tower</span>
-                <span className="text-xl font-bold" style={{ fontFamily: "'Syne', sans-serif" }}>Integer Telecom</span>
-              </div>
-              <p className="text-sm leading-relaxed max-w-sm">
-                Pioneering global connectivity through advanced engineering and rapid field deployment. Transforming the way the world connects.
-              </p>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="text-white font-bold mb-5" style={{ fontFamily: "'Syne', sans-serif" }}>Quick Links</h4>
-              <ul className="space-y-3 text-sm">
-                {QUICK_LINKS.map(l => (
-                  <li key={l}><a href="#" className="footer-link">{l}</a></li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Support */}
-            <div>
-              <h4 className="text-white font-bold mb-5" style={{ fontFamily: "'Syne', sans-serif" }}>Support</h4>
-              <ul className="space-y-3 text-sm">
-                <li><a href="mailto:support@integertel.com" className="footer-link">support@integertel.com</a></li>
-                <li><a href="tel:+19725394100" className="footer-link">+1 972 539 4100</a></li>
-                <li className="flex gap-4 pt-2">
-                  {["public", "share"].map(icon => (
-                    <a key={icon} href="#" className="text-white hover:text-[#259df4] transition-colors">
-                      <span className="material-symbols-outlined">{icon}</span>
-                    </a>
-                  ))}
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Footer bottom bar */}
-          <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-500">
-            <p>© 2024 Integer Telecom Services. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="footer-link">Terms of Service</a>
-              <a href="#" className="footer-link">Sitemap</a>
-            </div>
-          </div>
-        </footer>
+        
 
         {/* ══════════ MOBILE BOTTOM NAV ══════════ */}
         <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-lg">

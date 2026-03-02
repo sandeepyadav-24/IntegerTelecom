@@ -2,14 +2,7 @@ import { useState } from "react";
 
 const PRIMARY = "#259df4";
 
-const NAV_ITEMS = [
-  { id: "home", icon: "home", label: "Home" },
-  { id: "services", icon: "engineering", label: "Services" },
-  { id: "projects", icon: "work", label: "Projects" },
-  { id: "contact", icon: "mail", label: "Contact" },
-];
 
-const DESKTOP_NAV = ["Home", "About", "Services", "Contact"];
 
 const HERO_IMG = "https://lh3.googleusercontent.com/aida-public/AB6AXuATObHqdFpG0UO3266eMTtUPaIEiNE57fj4K3JBbBTV4tnRLkDhDQoRYQwiWXTSzg8bt0_dcC_v2G_F8ajiI3Gf68oz9NRdvcAFNQi5xNAGACZjPum1MuXe7I6PkHYAiWmWC70fYj8uXRDQVo0uuyarB5sqrmNDQ18ze8f_OIxrftNW5EmgFQiwRCe5XydlHXxoWZT-CDPYYiwQbnPryozo7Ujpq4ZLRAHAa-j51xSmZTswxAv7GP94heIrJPkGIOEJ5EpyGmvsgmY8";
 
@@ -242,46 +235,12 @@ export default function FiberEngineering() {
               </button>
             </div>
 
-            <p className="text-center text-slate-400 text-xs mt-4">Professional Engineering & Technical Services</p>
+            
           </section>
 
         </main>
 
-        {/* ══════════ DESKTOP FOOTER ══════════ */}
-        <footer className="hidden md:block bg-slate-900 text-slate-400 py-8 px-6">
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-2 text-white">
-              <span className="material-symbols-outlined text-2xl" style={{ color: PRIMARY }}>cable</span>
-              <span className="font-bold text-sm" style={{ fontFamily: "'Syne', sans-serif" }}>Integer Telecom — Fiber Division</span>
-            </div>
-            <div className="flex gap-8 text-sm">
-              {DESKTOP_NAV.map(l => (
-                <a key={l} href="#" className="hover:text-white transition-colors">{l}</a>
-              ))}
-            </div>
-            <p className="text-xs">© 2024 Integer Telecom Services</p>
-          </div>
-        </footer>
-
-        {/* ══════════ MOBILE BOTTOM NAV ══════════ */}
-        <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-lg">
-          <div className="flex max-w-md mx-auto h-16">
-            {NAV_ITEMS.map(({ id, icon, label }) => {
-              const active = activeNav === id;
-              return (
-                <button key={id} onClick={() => setActiveNav(id)}
-                  className="flex flex-1 flex-col items-center justify-center gap-0.5 transition-colors"
-                  style={{ color: active ? PRIMARY : "#94a3b8" }}>
-                  <span className="material-symbols-outlined text-[22px]"
-                    style={{ fontVariationSettings: active ? "'FILL' 1" : "'FILL' 0" }}>
-                    {icon}
-                  </span>
-                  <p className="text-[9px] font-bold uppercase tracking-wider">{label}</p>
-                </button>
-              );
-            })}
-          </div>
-        </nav>
+        
 
       </div>
     </>
