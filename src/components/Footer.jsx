@@ -1,5 +1,8 @@
 import React from "react";
 
+
+
+
 export default function Footer() {
   const FOOTER_SERVICES = [
     "Network Infrastructure",
@@ -96,7 +99,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="max-w-7xl mx-auto mt-14 pt-8 border-t border-slate-800 text-xs flex flex-col md:flex-row justify-between gap-3">
-        <p>© 2024 Integer Telecom Services. All rights reserved.</p>
+        <p>© 2026 Integer Telecom Services. All rights reserved.</p>
 
         <div className="flex gap-5">
           {["Privacy Policy", "Terms of Service", "Cookie Policy"].map(
@@ -112,6 +115,8 @@ export default function Footer() {
           )}
         </div>
       </div>
+  
+
     </footer>
   );
 }

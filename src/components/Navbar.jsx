@@ -25,17 +25,14 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-blue-100">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
 
+        
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-[#259df4] text-3xl">
-            router
-          </span>
-          <h1
-            className="text-xl font-bold tracking-tight"
-            style={{ fontFamily: "'Syne', sans-serif" }}
-          >
-            Integer <span className="text-[#259df4]">Telecom</span>
-          </h1>
+             <img
+                  src="https://integertel.com/images/logo@2x.png"
+                   alt="Integer Telecom Logo"
+                   className="h-10 w-auto"
+              />
         </Link>
 
         {/* Desktop Navigation */}

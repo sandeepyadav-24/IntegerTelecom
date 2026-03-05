@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import Hero from "./Hero";
+
 
 // ── Icons (inline SVG helpers) ───────
 const Icon = ({ name, className = "" }) => {
@@ -78,15 +80,7 @@ const Icon = ({ name, className = "" }) => {
   return icons[name] || null;
 };
 
-{/*// ── Reusable Components ──
-const NavLink = ({ href, children }) => (
-  <a
-    href={href}
-    className="text-slate-700 hover:text-blue-500 transition-colors font-medium text-sm"
-  >
-    {children}
-  </a>
-); */}
+
 
 const CheckItem = ({ children }) => (
   <li className="flex items-start gap-3 text-slate-600 text-sm">
@@ -193,6 +187,8 @@ const CLIENTS = [
   "Silicon Developers",
 ];
 
+
+
 // ── Main Component ───────────────────────
 export default function IntegerTelecom() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -206,97 +202,13 @@ export default function IntegerTelecom() {
 
   return (
     <div className="bg-slate-50 text-slate-900 font-sans">
+     <Hero/>
 
-      
-
-{/* ── Navigation ── */}
-{/*<nav className={`sticky top-0 z-50 transition-all duration-300 ${
-  scrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-white"
-} border-b border-slate-200 px-4 py-4`}>
-
-  <div className="max-w-7xl mx-auto flex items-center justify-between">
     
-    {/* Logo /}
-    <Link to="/" className="flex items-center gap-2">
-      <Icon name="antenna" className="w-8 h-8 text-blue-500" />
-      <span className="text-xl font-black tracking-tight">
-        Integer Telecom Services
-      </span>
-    </Link>
-
-    {/* Desktop nav /}
-    <div className="hidden md:flex items-center gap-8">
-      
-      <NavLink
-        to="/services"
-        className={({ isActive }) =>
-          isActive ? "text-blue-600 font-semibold" : "text-slate-700"
-        }
-      >
-        Services
-      </NavLink>
-
-      <NavLink
-        to="/about"
-        className={({ isActive }) =>
-          isActive ? "text-blue-600 font-semibold" : "text-slate-700"
-        }
-      >
-        Who We Are
-      </NavLink>
-
-      <Link
-        to="/contact"
-        className="bg-blue-500 text-white px-5 py-2 rounded-lg font-bold text-sm hover:bg-blue-600 transition-colors"
-      >
-        Contact Us
-      </Link>
-    </div>
-
-    {/* Mobile burger /}
-    <button
-      className="md:hidden text-slate-700"
-      onClick={() => setMenuOpen(!menuOpen)}
-      aria-label="Toggle menu"
-    >
-      <Icon name="menu" className="w-6 h-6" />
-    </button>
-  </div>
-
-  {/* Mobile menu /}
-  {menuOpen && (
-    <div className="md:hidden mt-4 border-t border-slate-100 pt-4 flex flex-col gap-4 px-2">
-      
-      <NavLink
-        to="/services"
-        className="font-medium text-slate-700"
-        onClick={() => setMenuOpen(false)}
-      >
-        Services
-      </NavLink>
-
-      <NavLink
-        to="/about"
-        className="font-medium text-slate-700"
-        onClick={() => setMenuOpen(false)}
-      >
-        Who We Are
-      </NavLink>
-
-      <Link
-        to="/contact"
-        onClick={() => setMenuOpen(false)}
-        className="bg-blue-500 text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-blue-600 transition-colors w-fit"
-      >
-        Contact Us
-      </Link>
-    </div>
-  )}
-</nav>}
-
       {/* ── Hero ── */}
-      <header className="relative bg-white py-16 lg:py-24 overflow-hidden">
-        {/* subtle dot pattern */}
+      {/**
+       * <header className="relative bg-white py-16 lg:py-24 overflow-hidden">
+        {/* subtle dot pattern /}
         <div className="absolute inset-0 opacity-[0.04]"
           style={{ backgroundImage: "radial-gradient(#0ea5e9 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center relative">
@@ -346,6 +258,7 @@ export default function IntegerTelecom() {
           </div>
         </div>
       </header>
+       */}
 
       {/* ── Who We Are ── */}
       <section className="py-20 bg-slate-50" id="about">
@@ -468,7 +381,7 @@ export default function IntegerTelecom() {
       <section className="py-20 bg-slate-900 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
-          style={{ backgroundImage: "radial-gradient(#3b82f6 1px, transparent 1px)", backgroundSize: "40px 40px" }}
+          style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "40px 40px" }}
         />
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
           <h2 className="text-3xl lg:text-5xl font-black text-white mb-5 leading-tight">
