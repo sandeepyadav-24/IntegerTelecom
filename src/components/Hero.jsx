@@ -242,7 +242,7 @@ export default function Hero() {
 
             {/* Headline */}
             <h1
-              className="hero-font text-5xl lg:text-[2.75rem] font-extrabold leading-[1.08] tracking-tight text-slate-900"
+              className="t text-5xl lg:text-[3rem] font-extrabold leading-[1.08] tracking-tight text-slate-900"
               style={{ animationDelay: ".1s", animation: mounted ? "floatUp .8s ease both" : "none" }}
             >
               Engineering &amp; Enabling<br />
